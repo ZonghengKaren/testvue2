@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>V1</title>
+  </head>
+  <body>
+    <div id="app1">  
+        <!--vue判断-->  
+        <span v-if="ok">  
+            <!-- {{message}}  --> 
+        </span>  
+        <!--vue循环-->  
+        <ul>  
+            <li v-for="l in list">  
+                my name is {{l.name}},I am {{l.age}} years old  
+            </li>  
+        </ul>  
+    </div>  
+    <!--引入cdn库，引入js需要在最底部-->  
+    <script src="//cdn.bootcss.com/vue/2.1.8/vue.min.js"></script>  
+    <script src="js/v1.js" type="text/javascript" charset="utf-8"></script>  
+  </body>
+</html>
