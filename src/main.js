@@ -6,9 +6,9 @@ import Router from 'vue-router'  // 引入router路由
 
 // 引入项目的四个模块组件
 import introduce from './components/introduce'
-import home from './components/home'
 import employment from './components/employment'
 import consult from './components/consult'
+import Hello from './components/Hello'
 
 Vue.config.productionTip = false
 
@@ -18,8 +18,8 @@ Vue.use(Router) // 使用router
 
 // 定义路由
 var routes = [{
-  path: '/home',
-  component: home
+  path: '/',
+  component: Hello
 }, {
   path: '/introduce',
   component: introduce
@@ -39,6 +39,6 @@ var vueRouter = new Router({
 new Vue({
   el: '#app',
   router: vueRouter,
-  template: '<pp><App/>',
+  template: '<App/>',
   components: { App }
 })

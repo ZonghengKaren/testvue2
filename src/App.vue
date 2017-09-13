@@ -16,32 +16,10 @@
     </div>
   </div>
 </template>
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-.nav-top {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -600px;
-  z-index: 99;
-}
-.banner{
-  width: 100%;
-  height: 370px;
-  overflow: hidden;
-  background: url("assets/banner.jpg");
-  background-repeat: no-repeat;
-}
-</style>
 <script>
 import header from './components/header.vue'
 import footer from './components/footer.vue'
+import './stylesheet/style.css'
 export default{
   components: {
     'v-header': header,
