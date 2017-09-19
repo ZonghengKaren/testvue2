@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header-wrapper">
       <div class="logo">
-        <a href="/home">TEST</a>
+        <a href="/">TEST</a>
       </div>
       <ul class="nav">
         <li><router-link to="/">首页</router-link></li>
