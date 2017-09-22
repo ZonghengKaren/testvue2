@@ -32,7 +32,7 @@ var routes = [{
 }]
 
 // 实例化路由
-var vueRouter = new Router({
+var vueRouter =new Router({
   routes
 })
 
