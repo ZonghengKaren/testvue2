@@ -113,6 +113,10 @@ var webpackConfig = merge(baseWebpackConfig, {
       name: 'manifest',
       chunks: ['vendor']
     }),
+    new webpack.ProvidePlugin({
+      jQuery: "jquery",
+      $: "jquery"
+    }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {

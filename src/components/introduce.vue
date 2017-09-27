@@ -4,12 +4,13 @@
     <div class="content">
           <p>公司介绍</p>
           <p>{{message}}</p>
-          <button>Click Me</button>
+          <button @click="doSomething()" class="button">Click Me</button>
     </div>
 	</div>
 </template>
 <script type="text/javascript">
 import slider from 'vue-concise-slider'
+import $ from 'jquery'
 export default {
   name: 'introduce',
   data () {
@@ -43,7 +44,7 @@ export default {
             thresholdDistance: 500,//滑动判定距离
             thresholdTime: 100,//滑动判定时间
             autoplay:5000,//自动滚动[ms]
-            loop:false,//循环滚动
+            loop:true,//循环滚动
             direction:'horizontal',//方向设置，horizontal,vertical
             infinite:1,//无限滚动前后遍历数
             slidesToScroll:1,//每次滑动项数
@@ -52,6 +53,12 @@ export default {
       },
       components: {
           slider
+      },
+      methods: {      
+        doSomething(event){
+          /*var tx=$(this).text();*/
+          alert(tx);
+        }
       }
 }
 </script>

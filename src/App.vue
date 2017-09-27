@@ -17,6 +17,7 @@
 <script>
 import header from './components/header.vue'
 import footer from './components/footer.vue'
+
 import './stylesheet/style.css'
 export default{
   components: {
